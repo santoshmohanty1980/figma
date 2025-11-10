@@ -56,9 +56,9 @@ export default function AIModule({ onQuery, results }: AIModuleProps) {
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.2)" />
                 <XAxis dataKey="name" stroke="white" fontSize={10} />
                 <YAxis stroke="white" fontSize={10} />
-                <Tooltip 
-                  contentStyle={{ 
-                    background: 'rgba(0,0,0,0.8)', 
+                <Tooltip
+                  contentStyle={{
+                    background: 'rgba(0,0,0,0.8)',
                     border: '1px solid rgba(255,255,255,0.2)',
                     borderRadius: '8px',
                     color: 'white'
@@ -77,7 +77,7 @@ export default function AIModule({ onQuery, results }: AIModuleProps) {
             <div className="upload-content">
               <div className="upload-icon">📁</div>
               <p>{results.content}</p>
-              
+
               <div className="file-upload-area">
                 <input
                   type="file"
@@ -99,7 +99,7 @@ export default function AIModule({ onQuery, results }: AIModuleProps) {
                       {(uploadedFile.size / 1024).toFixed(1)} KB
                     </span>
                   </div>
-                  <button 
+                  <button
                     className="process-button"
                     onClick={() => console.log('Processing file:', uploadedFile.name)}
                   >
@@ -120,7 +120,7 @@ export default function AIModule({ onQuery, results }: AIModuleProps) {
     <div className="ai-module">
       <h2 className="ai-title">AI Assistant</h2>
       <p className="ai-subtitle">Query AI for insights and analysis</p>
-      
+
       <div className="ai-controls">
         <div className="query-section">
           <label className="query-label">Your Query</label>
@@ -172,7 +172,7 @@ export default function AIModule({ onQuery, results }: AIModuleProps) {
         {renderResults()}
       </div>
 
-      <style jsx>{`
+      <style>{`
         .ai-module {
           color: white;
           height: 100%;

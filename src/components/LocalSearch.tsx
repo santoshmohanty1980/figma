@@ -30,7 +30,7 @@ export default function LocalSearch({ onSearch, results }: LocalSearchProps) {
     <div className="local-search">
       <h2 className="search-title">Local Search</h2>
       <p className="search-subtitle">Find documents and content quickly</p>
-      
+
       <div className="search-input-container">
         <input
           type="text"
@@ -77,7 +77,7 @@ export default function LocalSearch({ onSearch, results }: LocalSearchProps) {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         .local-search {
           color: white;
           height: 100%;

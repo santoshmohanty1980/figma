@@ -6,7 +6,7 @@ interface AccountStatusProps {
   user: User
 }
 
-export default function AccountStatus({ user }: AccountStatusProps) {
+export default function AccountStatus({ }: AccountStatusProps) {
   const accountData = {
     status: 'Active',
     memberSince: '2023',
@@ -27,7 +27,7 @@ export default function AccountStatus({ user }: AccountStatusProps) {
       }}>
         Account Status
       </h2>
-      
+
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
